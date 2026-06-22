@@ -40,5 +40,11 @@ public class Paladino extends Personagem {
         }
         System.out.println("Você causou: " + getAtaque() + " de dano, o inimigo tem: " + alvo.getVida() + " pontos de vida restantes.");
     }
+    @Override
+    public void mostrarInformacoes() {
+        super.mostrarInformacoes();
+        System.out.println("Mana: "+this.mana);
+        System.out.println("Dano Mágico: " + this.danoMagico);
+    }
 
 }

@@ -51,6 +51,12 @@ public abstract class Personagem {
             System.out.println("XP atual: " + this.xp);
         }
     }
+    public void mostrarInformacoes(){
+        System.out.println("Dano Físico: "+getAtaque());
+        System.out.println("Defesa: "+getDefesa());
+        System.out.println("Vida: "+getVida());
+
+    }
 
     public String getNome(){
         return nome;

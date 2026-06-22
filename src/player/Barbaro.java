@@ -22,6 +22,7 @@ public class Barbaro extends Personagem{
         System.out.println("Você causou: " + getAtaque() + " de dano, o inimigo tem: " + alvo.getVida() + " pontos de vida restantes.");
     }
 
+
 }
 
 
