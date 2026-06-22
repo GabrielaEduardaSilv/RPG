@@ -1,0 +1,500 @@
+Slime Verde;1;54;12;6;25
+Slime Azul;1;59;9;6;24
+Slime Vermelho;1;53;9;6;30
+Morcego;1;53;12;5;34
+Rato Gigante;1;55;9;7;22
+Aranha;2;70;16;9;43
+Lobo;2;72;13;9;46
+Abelha Selvagem;2;76;14;8;36
+Cogumelo Vivo;2;76;13;10;38
+Besouro;2;76;14;10;45
+Slime Verde;3;89;19;11;51
+Slime Azul;3;92;20;12;51
+Slime Vermelho;3;93;17;13;46
+Morcego;3;90;19;13;49
+Rato Gigante;3;91;17;11;56
+Aranha;4;106;21;16;71
+Lobo;4;107;23;16;71
+Abelha Selvagem;4;105;22;16;58
+Cogumelo Vivo;4;111;23;16;69
+Besouro;4;114;22;15;61
+Slime Verde;5;128;26;18;83
+Slime Azul;5;123;26;19;81
+Slime Vermelho;5;127;25;19;80
+Morcego;5;120;27;19;83
+Rato Gigante;5;127;26;17;78
+Aranha;6;142;32;20;85
+Lobo;6;147;31;21;88
+Abelha Selvagem;6;146;32;21;85
+Cogumelo Vivo;6;143;29;22;92
+Besouro;6;138;31;21;88
+Slime Verde;7;161;34;25;104
+Slime Azul;7;162;36;25;96
+Slime Vermelho;7;157;33;24;107
+Morcego;7;162;36;23;107
+Rato Gigante;7;161;33;23;101
+Aranha;8;176;37;26;113
+Lobo;8;182;39;26;109
+Abelha Selvagem;8;178;40;26;114
+Cogumelo Vivo;8;179;38;27;120
+Besouro;8;182;37;26;111
+Slime Verde;9;195;44;30;130
+Slime Azul;9;193;44;29;131
+Slime Vermelho;9;198;42;29;128
+Morcego;9;202;44;29;120
+Rato Gigante;9;193;41;29;118
+Aranha;10;215;46;33;135
+Lobo;10;222;45;32;130
+Abelha Selvagem;10;214;45;34;138
+Cogumelo Vivo;10;216;45;32;136
+Besouro;10;219;47;33;144
+Goblin;11;231;50;37;151
+Goblin Arqueiro;11;233;52;35;151
+Goblin Xamã;11;229;49;35;149
+Kobold;11;234;51;37;145
+Esqueleto;11;235;49;35;143
+Zumbi;12;249;56;40;166
+Bandido;12;258;56;39;165
+Ladino;12;257;53;39;165
+Hiena;12;251;53;39;168
+Gnoll;12;255;56;39;155
+Goblin;13;271;60;41;168
+Goblin Arqueiro;13;267;60;41;179
+Goblin Xamã;13;273;58;42;170
+Kobold;13;272;60;41;172
+Esqueleto;13;266;59;43;173
+Zumbi;14;289;63;44;191
+Bandido;14;288;62;46;191
+Ladino;14;289;61;46;191
+Hiena;14;283;61;45;188
+Gnoll;14;287;64;44;181
+Goblin;15;311;65;48;196
+Goblin Arqueiro;15;303;65;49;194
+Goblin Xamã;15;305;65;49;202
+Kobold;15;307;67;48;204
+Esqueleto;15;306;68;48;190
+Zumbi;16;329;71;51;210
+Bandido;16;318;70;52;212
+Ladino;16;325;70;50;210
+Hiena;16;319;71;51;213
+Gnoll;16;322;69;52;209
+Goblin;17;347;74;55;221
+Goblin Arqueiro;17;341;74;55;228
+Goblin Xamã;17;347;73;55;217
+Kobold;17;346;73;55;225
+Esqueleto;17;348;76;55;228
+Zumbi;18;354;78;58;234
+Bandido;18;362;78;56;227
+Ladino;18;365;79;56;241
+Hiena;18;365;80;57;239
+Gnoll;18;360;80;58;235
+Goblin;19;380;83;60;247
+Goblin Arqueiro;19;373;83;59;252
+Goblin Xamã;19;380;84;60;251
+Kobold;19;379;81;61;241
+Esqueleto;19;377;84;60;241
+Zumbi;20;391;85;63;261
+Bandido;20;395;87;62;253
+Ladino;20;398;85;64;259
+Hiena;20;395;87;62;250
+Gnoll;20;392;87;64;255
+Orc;21;410;92;65;270
+Orc Guerreiro;21;418;91;66;267
+Orc Xamã;21;412;91;67;267
+Ogro;21;408;90;65;275
+Troll;21;420;91;67;273
+Lobisomem;22;438;96;70;277
+Gárgula;22;427;95;69;284
+Escorpião Gigante;22;435;96;68;282
+Serpente;22;434;94;69;286
+Armadura Amaldiçoada;22;434;96;70;277
+Orc;23;454;98;71;288
+Orc Guerreiro;23;445;97;71;291
+Orc Xamã;23;444;97;73;300
+Ogro;23;448;97;73;299
+Troll;23;454;99;72;298
+Lobisomem;24;471;104;74;306
+Gárgula;24;470;103;74;312
+Escorpião Gigante;24;464;101;76;311
+Serpente;24;465;103;74;308
+Armadura Amaldiçoada;24;462;103;76;308
+Orc;25;490;105;78;325
+Orc Guerreiro;25;480;108;77;314
+Orc Xamã;25;482;105;79;321
+Ogro;25;491;106;78;314
+Troll;25;489;105;79;314
+Lobisomem;26;504;110;81;324
+Gárgula;26;500;111;81;334
+Escorpião Gigante;26;498;109;81;325
+Serpente;26;501;109;82;332
+Armadura Amaldiçoada;26;506;109;82;331
+Orc;27;518;114;85;334
+Orc Guerreiro;27;523;114;85;337
+Orc Xamã;27;523;114;84;343
+Ogro;27;527;115;85;344
+Troll;27;527;115;85;335
+Lobisomem;28;546;117;87;356
+Gárgula;28;535;119;88;352
+Escorpião Gigante;28;539;117;88;355
+Serpente;28;535;120;87;350
+Armadura Amaldiçoada;28;539;120;87;347
+Orc;29;560;121;89;358
+Orc Guerreiro;29;560;123;91;365
+Orc Xamã;29;561;124;89;365
+Ogro;29;561;121;89;367
+Troll;29;557;121;90;365
+Lobisomem;30;578;125;92;382
+Gárgula;30;572;126;93;380
+Escorpião Gigante;30;581;125;93;371
+Serpente;30;578;127;93;370
+Armadura Amaldiçoada;30;575;125;92;382
+Golem de Pedra;31;599;131;96;391
+Golem de Ferro;31;591;131;96;397
+Cavaleiro Sombrio;31;590;129;95;383
+Necromante;31;597;129;96;392
+Aranha Rainha;31;592;130;97;392
+Minotauro;32;615;133;100;395
+Centauro Corrompido;32;610;134;100;395
+Elemental de Terra;32;618;135;99;394
+Elemental de Fogo;32;609;136;99;396
+Quimera Jovem;32;609;134;98;400
+Golem de Pedra;33;629;140;102;410
+Golem de Ferro;33;624;138;103;406
+Cavaleiro Sombrio;33;636;138;102;415
+Necromante;33;627;140;102;421
+Aranha Rainha;33;636;138;102;406
+Minotauro;34;651;141;106;421
+Centauro Corrompido;34;653;141;106;420
+Elemental de Terra;34;650;143;104;427
+Elemental de Fogo;34;653;144;105;425
+Quimera Jovem;34;646;141;104;428
+Golem de Pedra;35;671;148;108;435
+Golem de Ferro;35;663;148;109;433
+Cavaleiro Sombrio;35;662;148;108;437
+Necromante;35;663;146;108;435
+Aranha Rainha;35;666;146;107;432
+Minotauro;36;688;151;110;453
+Centauro Corrompido;36;690;151;112;457
+Elemental de Terra;36;687;152;111;450
+Elemental de Fogo;36;686;149;110;452
+Quimera Jovem;36;690;151;111;450
+Golem de Pedra;37;697;154;113;455
+Golem de Ferro;37;706;156;115;468
+Cavaleiro Sombrio;37;697;153;114;460
+Necromante;37;696;153;115;459
+Aranha Rainha;37;697;153;115;455
+Minotauro;38;716;159;118;466
+Centauro Corrompido;38;715;160;118;481
+Elemental de Terra;38;718;160;118;472
+Elemental de Fogo;38;725;157;117;468
+Quimera Jovem;38;724;157;118;476
+Golem de Pedra;39;743;161;121;490
+Golem de Ferro;39;743;162;120;483
+Cavaleiro Sombrio;39;736;162;120;481
+Necromante;39;737;162;119;489
+Aranha Rainha;39;741;164;121;488
+Minotauro;40;761;168;122;491
+Centauro Corrompido;40;753;165;124;491
+Elemental de Terra;40;755;165;122;490
+Elemental de Fogo;40;762;167;124;495
+Quimera Jovem;40;757;167;123;502
+Quimera;41;777;171;127;513
+Mantícora;41;780;171;126;505
+Hidra;41;771;172;126;514
+Wyvern;41;768;170;125;513
+Grifo Sombrio;41;775;170;127;509
+Lich;42;788;175;128;517
+Demônio Menor;42;789;174;128;518
+Vampiro;42;791;173;129;515
+Guardião Antigo;42;797;176;128;526
+Gigante;42;789;173;130;520
+Quimera;43;809;180;131;536
+Mantícora;43;816;179;133;539
+Hidra;43;814;177;132;528
+Wyvern;43;806;179;131;540
+Grifo Sombrio;43;806;180;133;529
+Lich;44;828;181;135;549
+Demônio Menor;44;832;184;136;551
+Vampiro;44;831;184;134;553
+Guardião Antigo;44;831;181;135;539
+Gigante;44;834;184;134;542
+Quimera;45;842;185;138;559
+Mantícora;45;844;186;138;550
+Hidra;45;849;187;138;552
+Wyvern;45;847;185;137;563
+Grifo Sombrio;45;846;188;139;563
+Lich;46;859;189;142;566
+Demônio Menor;46;866;191;140;574
+Vampiro;46;865;191;140;565
+Guardião Antigo;46;870;189;140;574
+Gigante;46;860;192;142;573
+Quimera;47;882;196;144;585
+Mantícora;47;882;196;143;584
+Hidra;47;883;193;145;576
+Wyvern;47;884;193;144;584
+Grifo Sombrio;47;879;193;144;583
+Lich;48;900;197;147;598
+Demônio Menor;48;904;199;148;595
+Vampiro;48;899;199;148;595
+Guardião Antigo;48;895;200;146;593
+Gigante;48;896;197;148;587
+Quimera;49;914;202;150;605
+Mantícora;49;924;204;151;613
+Hidra;49;923;203;149;609
+Wyvern;49;919;204;150;608
+Grifo Sombrio;49;918;202;151;604
+Lich;50;932;208;152;622
+Demônio Menor;50;937;205;153;624
+Vampiro;50;932;205;154;611
+Guardião Antigo;50;936;206;154;622
+Gigante;50;942;208;153;621
+Dragão Verde;51;948;212;155;634
+Dragão Azul;51;952;212;156;630
+Dragão Vermelho;51;956;211;156;622
+Dragão Negro;51;952;210;157;628
+Titã de Pedra;51;953;210;157;622
+Titã de Gelo;52;978;214;159;649
+Senhor Demônio;52;972;215;160;649
+Fênix Sombria;52;972;215;159;634
+Ceifador;52;966;216;159;637
+Beemote;52;966;215;159;634
+Dragão Verde;53;994;218;162;654
+Dragão Azul;53;994;220;161;651
+Dragão Vermelho;53;994;219;161;656
+Dragão Negro;53;988;218;162;659
+Titã de Pedra;53;986;220;161;657
+Titã de Gelo;54;1002;223;165;658
+Senhor Demônio;54;1010;221;165;663
+Fênix Sombria;54;1013;221;164;672
+Ceifador;54;1014;223;165;673
+Beemote;54;1008;221;166;659
+Dragão Verde;55;1023;226;167;674
+Dragão Azul;55;1028;227;169;678
+Dragão Vermelho;55;1023;228;169;676
+Dragão Negro;55;1021;227;168;682
+Titã de Pedra;55;1025;226;169;671
+Titã de Gelo;56;1043;230;170;694
+Senhor Demônio;56;1042;230;172;691
+Fênix Sombria;56;1048;231;172;695
+Ceifador;56;1048;230;172;694
+Beemote;56;1050;230;171;685
+Dragão Verde;57;1060;233;174;705
+Dragão Azul;57;1066;235;174;704
+Dragão Vermelho;57;1057;235;174;709
+Dragão Negro;57;1065;233;173;698
+Titã de Pedra;57;1067;233;175;695
+Titã de Gelo;58;1079;240;176;717
+Senhor Demônio;58;1078;237;178;715
+Fênix Sombria;58;1084;237;176;712
+Ceifador;58;1085;239;176;709
+Beemote;58;1081;239;176;708
+Dragão Verde;59;1099;242;179;719
+Dragão Azul;59;1096;244;181;728
+Dragão Vermelho;59;1100;244;181;724
+Dragão Negro;59;1097;243;180;725
+Titã de Pedra;59;1092;242;181;732
+Titã de Gelo;60;1121;248;182;733
+Senhor Demônio;60;1113;246;184;732
+Fênix Sombria;60;1120;246;184;736
+Ceifador;60;1114;248;182;742
+Beemote;60;1112;246;183;741
+Arcanjo Caído;61;1140;252;185;757
+Kraken;61;1139;249;185;757
+Dragão Ancião;61;1139;249;185;742
+Leviatã;61;1128;251;187;745
+Colosso;61;1139;252;186;757
+Guardião Celestial;62;1149;255;188;757
+Imperador Lich;62;1155;256;190;764
+Horror Cósmico;62;1148;253;190;757
+Anjo Corrompido;62;1154;254;190;764
+Quimera Real;62;1155;256;189;762
+Arcanjo Caído;63;1175;257;193;773
+Kraken;63;1171;257;191;770
+Dragão Ancião;63;1166;258;193;778
+Leviatã;63;1166;258;192;769
+Colosso;63;1172;260;192;775
+Guardião Celestial;64;1184;264;194;793
+Imperador Lich;64;1191;264;195;779
+Horror Cósmico;64;1189;263;196;791
+Anjo Corrompido;64;1187;262;194;787
+Quimera Real;64;1183;261;195;779
+Arcanjo Caído;65;1212;267;199;792
+Kraken;65;1202;268;198;799
+Dragão Ancião;65;1200;265;197;794
+Leviatã;65;1210;267;199;803
+Colosso;65;1212;266;198;792
+Guardião Celestial;66;1229;272;200;806
+Imperador Lich;66;1218;271;200;813
+Horror Cósmico;66;1223;271;200;814
+Anjo Corrompido;66;1229;271;202;811
+Quimera Real;66;1229;272;200;802
+Arcanjo Caído;67;1247;273;204;821
+Kraken;67;1242;275;205;820
+Dragão Ancião;67;1243;276;203;817
+Leviatã;67;1238;275;204;818
+Colosso;67;1245;274;203;826
+Guardião Celestial;68;1254;277;208;828
+Imperador Lich;68;1261;277;206;835
+Horror Cósmico;68;1266;278;206;833
+Anjo Corrompido;68;1257;279;206;826
+Quimera Real;68;1255;278;208;832
+Arcanjo Caído;69;1274;283;211;847
+Kraken;69;1273;283;210;841
+Dragão Ancião;69;1273;281;209;850
+Leviatã;69;1281;284;211;844
+Colosso;69;1282;281;211;849
+Guardião Celestial;70;1292;286;213;858
+Imperador Lich;70;1295;285;214;857
+Horror Cósmico;70;1291;288;214;850
+Anjo Corrompido;70;1296;288;214;853
+Quimera Real;70;1291;288;213;853
+Titã Ancestral;71;1317;289;217;872
+Rei Dragão;71;1310;291;215;877
+Avatar do Fogo;71;1309;291;216;862
+Avatar do Gelo;71;1316;291;215;866
+Avatar da Terra;71;1311;292;216;877
+Avatar dos Ventos;72;1332;293;220;877
+Rei Vampiro;72;1336;293;218;880
+Rei Demônio;72;1337;293;220;874
+Guardião do Vazio;72;1328;295;218;889
+Ancião;72;1328;295;220;875
+Titã Ancestral;73;1351;299;221;896
+Rei Dragão;73;1351;299;221;897
+Avatar do Fogo;73;1354;299;223;900
+Avatar do Gelo;73;1356;298;222;888
+Avatar da Terra;73;1356;299;221;889
+Avatar dos Ventos;74;1370;301;225;903
+Rei Vampiro;74;1369;302;224;913
+Rei Demônio;74;1368;302;225;899
+Guardião do Vazio;74;1363;301;224;904
+Ancião;74;1370;302;225;912
+Titã Ancestral;75;1381;306;228;921
+Rei Dragão;75;1390;308;229;910
+Avatar do Fogo;75;1391;308;229;918
+Avatar do Gelo;75;1392;307;229;912
+Avatar da Terra;75;1388;307;229;911
+Avatar dos Ventos;76;1405;311;232;930
+Rei Vampiro;76;1402;312;231;929
+Rei Demônio;76;1408;312;230;929
+Guardião do Vazio;76;1410;311;231;934
+Ancião;76;1409;310;230;924
+Titã Ancestral;77;1425;313;234;934
+Rei Dragão;77;1422;313;234;945
+Avatar do Fogo;77;1423;313;233;942
+Avatar do Gelo;77;1421;314;235;944
+Avatar da Terra;77;1417;316;233;935
+Avatar dos Ventos;78;1439;318;236;955
+Rei Vampiro;78;1436;319;238;958
+Rei Demônio;78;1439;319;236;961
+Guardião do Vazio;78;1446;318;238;949
+Ancião;78;1442;318;238;956
+Titã Ancestral;79;1464;321;241;970
+Rei Dragão;79;1459;324;239;964
+Avatar do Fogo;79;1458;321;240;973
+Avatar do Gelo;79;1452;321;240;968
+Avatar da Terra;79;1462;323;240;970
+Avatar dos Ventos;80;1480;326;243;971
+Rei Vampiro;80;1480;328;244;979
+Rei Demônio;80;1477;327;243;972
+Guardião do Vazio;80;1475;325;243;981
+Ancião;80;1477;328;242;980
+Devorador de Mundos;81;1500;330;247;996
+Imperador Dragão;81;1498;330;247;992
+Deus Menor;81;1491;331;246;993
+Serafim Caído;81;1494;331;246;988
+Senhor do Caos;81;1491;330;245;987
+Guardião Supremo;82;1518;336;248;995
+Criador Corrompido;82;1514;333;248;1003
+Ceifador Eterno;82;1514;336;250;1003
+Besta Primordial;82;1516;333;250;1007
+Oráculo;82;1514;335;248;997
+Devorador de Mundos;83;1532;339;251;1018
+Imperador Dragão;83;1525;338;253;1016
+Deus Menor;83;1529;340;251;1021
+Serafim Caído;83;1535;339;251;1009
+Senhor do Caos;83;1527;339;251;1008
+Guardião Supremo;84;1543;343;254;1025
+Criador Corrompido;84;1549;343;256;1020
+Ceifador Eterno;84;1551;342;256;1021
+Besta Primordial;84;1544;341;254;1024
+Oráculo;84;1546;342;254;1033
+Devorador de Mundos;85;1561;347;259;1044
+Imperador Dragão;85;1569;347;258;1036
+Deus Menor;85;1562;346;259;1032
+Serafim Caído;85;1569;345;259;1035
+Senhor do Caos;85;1568;347;259;1037
+Guardião Supremo;86;1588;352;262;1049
+Criador Corrompido;86;1590;351;260;1043
+Ceifador Eterno;86;1585;350;261;1050
+Besta Primordial;86;1587;350;261;1050
+Oráculo;86;1579;352;261;1044
+Devorador de Mundos;87;1608;355;265;1068
+Imperador Dragão;87;1603;356;264;1055
+Deus Menor;87;1602;356;265;1062
+Serafim Caído;87;1603;355;265;1059
+Senhor do Caos;87;1606;356;263;1056
+Guardião Supremo;88;1622;360;266;1067
+Criador Corrompido;88;1619;358;266;1078
+Ceifador Eterno;88;1625;357;268;1079
+Besta Primordial;88;1621;357;268;1068
+Oráculo;88;1623;359;268;1073
+Devorador de Mundos;89;1636;362;270;1081
+Imperador Dragão;89;1643;361;269;1080
+Deus Menor;89;1641;364;270;1093
+Serafim Caído;89;1632;361;271;1084
+Senhor do Caos;89;1636;363;270;1092
+Guardião Supremo;90;1655;367;272;1098
+Criador Corrompido;90;1651;367;272;1102
+Ceifador Eterno;90;1661;366;272;1090
+Besta Primordial;90;1656;365;274;1096
+Oráculo;90;1660;366;272;1105
+Deus da Guerra;91;1679;370;276;1109
+Deus da Morte;91;1670;369;276;1108
+Deusa da Magia;91;1673;370;277;1114
+Deus do Caos;91;1680;371;276;1117
+Deus da Luz;91;1677;372;277;1117
+Deus das Sombras;92;1694;373;280;1125
+Criador;92;1689;376;280;1122
+Destruidor;92;1686;373;280;1123
+Entidade Suprema;92;1690;373;278;1128
+Vazio Absoluto;92;1692;373;279;1117
+Deus da Guerra;93;1713;377;283;1127
+Deus da Morte;93;1716;380;282;1137
+Deusa da Magia;93;1704;379;282;1130
+Deus do Caos;93;1704;380;281;1140
+Deus da Luz;93;1711;379;283;1138
+Deus das Sombras;94;1728;384;285;1139
+Criador;94;1725;383;285;1138
+Destruidor;94;1731;384;284;1145
+Entidade Suprema;94;1731;383;285;1146
+Vazio Absoluto;94;1724;383;284;1146
+Deus da Guerra;95;1745;387;289;1158
+Deus da Morte;95;1749;387;288;1156
+Deusa da Magia;95;1745;386;287;1164
+Deus do Caos;95;1749;388;289;1161
+Deus da Luz;95;1743;385;288;1157
+Deus das Sombras;96;1764;390;290;1165
+Criador;96;1759;391;290;1164
+Destruidor;96;1768;389;292;1164
+Entidade Suprema;96;1759;392;292;1165
+Vazio Absoluto;96;1765;390;292;1173
+Deus da Guerra;97;1788;393;294;1174
+Deus da Morte;97;1781;396;295;1177
+Deusa da Magia;97;1784;396;293;1187
+Deus do Caos;97;1787;396;294;1178
+Deus da Luz;97;1782;393;295;1187
+Deus das Sombras;98;1795;399;296;1191
+Criador;98;1796;400;297;1192
+Destruidor;98;1798;399;297;1190
+Entidade Suprema;98;1796;398;298;1198
+Vazio Absoluto;98;1795;399;297;1197
+Deus da Guerra;99;1812;402;301;1208
+Deus da Morte;99;1823;403;300;1202
+Deusa da Magia;99;1824;402;299;1207
+Deus do Caos;99;1822;402;300;1209
+Deus da Luz;99;1824;403;299;1207
+Deus das Sombras;100;1840;407;304;1216
+Criador;100;1838;406;303;1215
+Destruidor;100;1840;406;304;1213
+Entidade Suprema;100;1835;406;303;1214
+Vazio Absoluto;100;1832;406;302;1211
