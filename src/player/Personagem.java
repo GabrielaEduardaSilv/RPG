@@ -10,7 +10,7 @@ public abstract class Personagem {
     private int id;
     private static int contador = 0;
 
-    public Personagem(){
+    public Personagem() {
         this.id = ++contador;
         this.vida = 100;
         this.nivel = 1;
@@ -39,11 +39,11 @@ public abstract class Personagem {
         this.defendendo = defendendo;
     }
 
-    public void verificarUpNivel(Inimigo alvo){
+    public void verificarUpNivel(Inimigo alvo) {
         this.xp += alvo.getXp();
         System.out.println("Você recebeu " + alvo.getXp() + " de XP do " + alvo.getNome() + "!");
 
-        if (this.xp >= 100){
+        if (this.xp >= 100) {
             this.nivel++;
             this.xp = this.xp - 100;
             System.out.println("Você subiu de nível! Seu nível atual: " + this.nivel);
@@ -52,55 +52,56 @@ public abstract class Personagem {
         }
     }
 
-    public String getNome(){
+
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public int getVida(){
+    public int getVida() {
         return vida;
     }
 
-    public void setVida(int vida){
+    public void setVida(int vida) {
         this.vida = vida;
     }
 
-    public int getAtaque(){
+    public int getAtaque() {
         return ataque;
     }
 
-    public void setAtaque(int ataque){
+    public void setAtaque(int ataque) {
         this.ataque = ataque;
     }
 
-    public int getDefesa(){
+    public int getDefesa() {
         return defesa;
     }
 
-    public void setDefesa(int defesa){
+    public void setDefesa(int defesa) {
         this.defesa = defesa;
     }
 
-    public int getNivel(){
+    public int getNivel() {
         return nivel;
     }
 
-    public void setNivel(int nivel){
+    public void setNivel(int nivel) {
         this.nivel = nivel;
     }
 
-    public int getXp(){
+    public int getXp() {
         return xp;
     }
 
-    public void setXp(int xp){
+    public void setXp(int xp) {
         this.xp = xp;
     }
 
-    public int getId(){
+    public int getId() {
         return id;
     }
 }

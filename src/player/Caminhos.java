@@ -3,8 +3,8 @@ package player;
 import java.util.List;
 import java.util.Scanner;
 
-public class Caminhos{
-    public void caminho(){
+public class Caminhos {
+    public void caminho() {
         int dano;
         Personagem personagem = null;
         LeitorInimigos leitor = new LeitorInimigos();
@@ -15,7 +15,7 @@ public class Caminhos{
         System.out.println("1. Mago");
         int op = scan.nextInt();
 
-        switch(op){
+        switch (op) {
             case 1: {
                 personagem = new Mago();
                 break;
@@ -29,20 +29,21 @@ public class Caminhos{
         System.out.println("Um " + inimigoAtual.getNome() + " Apareceu!");
 
 
-        do{
+        do {
             System.out.println("O que gostaria de fazer? ");
             System.out.println("1. Ataque físico.");
             System.out.println("2. Defender.");
 
-            if(personagem instanceof Mago){
+            if (personagem instanceof Mago) {
                 System.out.println("3. Ataque mágico.");
             }
 
             op = scan.nextInt();
 
-            switch(op){
+            switch (op) {
                 case 1: {
-                    personagem.atacar(inimigoAtual);;
+                    personagem.atacar(inimigoAtual);
+
                     break;
                 }
                 case 3: {
@@ -52,11 +53,11 @@ public class Caminhos{
                     break;
                 }
             }
-            if(inimigoAtual.verificarMorte()){
+            if (inimigoAtual.verificarMorte()) {
                 System.out.println("Você derrotou o inimigo!");
                 personagem.verificarUpNivel(inimigoAtual);
                 break;
             }
-        }while (op != 0);
+        } while (op != 0);
     }
 }

@@ -10,17 +10,17 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class LeitorInimigos {
-    public List<Inimigo> lerInimigos(String arquivo){
+    public List<Inimigo> lerInimigos(String arquivo) {
         List<Inimigo> inimigos = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(arquivo))){
+        try (BufferedReader br = new BufferedReader(new FileReader(arquivo))) {
             String linha;
 
             br.readLine();
 
-            while((linha = br.readLine()) != null){
+            while ((linha = br.readLine()) != null) {
                 String[] dados = linha.split(";");
 
-                if(dados.length !=6){
+                if (dados.length != 6) {
                     throw new ArquivoInvalidoException("Linha inválida: " + linha);
                 }
 
@@ -34,9 +34,9 @@ public class LeitorInimigos {
                 );
                 inimigos.add(inimigo);
             }
-        }catch(ArquivoInvalidoException e){
+        } catch (ArquivoInvalidoException e) {
             System.out.println(e.getMessage());
-        }catch(IOException e) {
+        } catch (IOException e) {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
         }
         return inimigos;
