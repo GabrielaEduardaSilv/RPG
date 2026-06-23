@@ -1,0 +1,51 @@
+ID;Nome;Defesa;Raridade;Valor
+1;Túnica Gasta;3;COMUM;50
+2;Colete de Couro;5;COMUM;80
+3;Armadura de Pano;7;COMUM;100
+4;Peitoral Simples;9;COMUM;120
+5;Proteção de Caçador;11;COMUM;140
+6;Malha Leve;13;COMUM;150
+7;Escamas Costuradas;15;COMUM;160
+8;Armadura Reforçada;17;COMUM;180
+9;Peitoral de Ferro;19;COMUM;200
+10;Couraça Básica;21;COMUM;220
+11;Armadura do Escudeiro;24;RARO;500
+12;Malha de Aço;26;RARO;560
+13;Peitoral Militar;28;RARO;600
+14;Armadura de Cavaleiro;30;RARO;640
+15;Escamas de Wyvern;32;RARO;700
+16;Couraça Pesada;34;RARO;740
+17;Armadura Sombria;36;RARO;800
+18;Peitoral Rúnico;38;RARO;840
+19;Armadura do Guardião;40;RARO;900
+20;Malha do Campeão;42;RARO;960
+21;Vestes Arcanas;45;EPICO;1560
+22;Armadura Élfica;47;EPICO;1650
+23;Couraça Encantada;49;EPICO;1740
+24;Malha Mística;51;EPICO;1800
+25;Peitoral Flamejante;53;EPICO;1890
+26;Armadura Fantasma;55;EPICO;1980
+27;Vestes Celestiais;57;EPICO;2040
+28;Armadura do Eclipse;59;EPICO;2100
+29;Couraça Berserker;61;EPICO;2190
+30;Peitoral Infernal;63;EPICO;2280
+31;Armadura do Dragão;67;LENDARIO;4000
+32;Couraça dos Titãs;70;LENDARIO;4200
+33;Vestes do Sol;73;LENDARIO;4400
+34;Armadura dos Heróis;76;LENDARIO;4600
+35;Peitoral do Ceifador;79;LENDARIO;4800
+36;Couraça do Caos;82;LENDARIO;5000
+37;Armadura da Tempestade;85;LENDARIO;5200
+38;Vestes Supremas;88;LENDARIO;5400
+39;Armadura do Vazio;91;LENDARIO;5600
+40;Couraça Divina;94;LENDARIO;5800
+41;Égide Eterna;100;UNICO;12500
+42;Armadura do Destino;105;UNICO;13000
+43;Couraça de Odin;110;UNICO;13500
+44;Vestes de Artemis;115;UNICO;14000
+45;Armadura de Gungnir;120;UNICO;14500
+46;Proteção do Fim;125;UNICO;15000
+47;Couraça do Deus da Guerra;130;UNICO;15500
+48;Armadura do Infinito;135;UNICO;16000
+49;Vestes da Criação;140;UNICO;16500
+50;Armadura do Aniquilador;145;UNICO;17000
