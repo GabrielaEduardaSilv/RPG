@@ -51,7 +51,7 @@ public abstract class Personagem {
             System.out.println("XP atual: " + this.xp);
         }
     }
-    public void mostrarInformacoes(){
+    public void mostrarInformacoes() {
         System.out.println("Dano Físico: "+getAtaque());
         System.out.println("Defesa: "+getDefesa());
         System.out.println("Vida: "+getVida());
@@ -71,7 +71,11 @@ public abstract class Personagem {
     }
 
     public void setVida(int vida) {
-        this.vida = vida;
+        if (vida < 0) {
+            this.vida = 0;
+        } else {
+            this.vida = vida;
+        }
     }
 
     public int getAtaque() {
