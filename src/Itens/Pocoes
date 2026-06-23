@@ -1,0 +1,11 @@
+ID;Nome;Recuperacao;Raridade;Valor
+1;Poção de Vida Pequena;25;COMUM;50
+2;Poção de Mana Pequena;20;COMUM;50
+3;Poção de Vida Média;75;RARO;200
+4;Poção de Mana Média;60;RARO;200
+5;Poção de Vida Grande;150;EPICO;600
+6;Poção de Mana Grande;120;EPICO;600
+7;Poção de Vida Superior;300;LENDARIO;1500
+8;Poção de Mana Superior;250;LENDARIO;1500
+9;Poção de Vida Suprema;500;UNICO;5000
+10;Poção de Mana Suprema;450;UNICO;5000

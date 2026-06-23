@@ -1,0 +1,51 @@
+ID;Nome;Dano;Raridade;Valor
+1;Adaga Enferrujada;5;COMUM;50
+2;Espada Curta;8;COMUM;80
+3;Clava de Madeira;10;COMUM;100
+4;Machado Simples;12;COMUM;120
+5;Lança de Caça;14;COMUM;140
+6;Arco Curto;15;COMUM;150
+7;Faca de Combate;16;COMUM;160
+8;Martelo Leve;18;COMUM;180
+9;Espada de Ferro;20;COMUM;200
+10;Alabarda Simples;22;COMUM;220
+11;Espada Longa;25;RARO;500
+12;Machado de Guerra;28;RARO;560
+13;Arco Reforçado;30;RARO;600
+14;Lança Militar;32;RARO;640
+15;Martelo de Batalha;35;RARO;700
+16;Sabre de Aço;37;RARO;740
+17;Foice Sombria;40;RARO;800
+18;Besta Pesada;42;RARO;840
+19;Espada do Cavaleiro;45;RARO;900
+20;Machado Duplo;48;RARO;960
+21;Lâmina Arcana;52;EPICO;1560
+22;Arco Élfico;55;EPICO;1650
+23;Cajado do Mago;58;EPICO;1740
+24;Martelo Rúnico;60;EPICO;1800
+25;Espada Flamejante;63;EPICO;1890
+26;Foice Fantasma;66;EPICO;1980
+27;Lança Celestial;68;EPICO;2040
+28;Adaga das Sombras;70;EPICO;2100
+29;Machado Berserker;73;EPICO;2190
+30;Besta Infernal;76;EPICO;2280
+31;Espada do Dragão;80;LENDARIO;4000
+32;Martelo dos Titãs;84;LENDARIO;4200
+33;Arco do Sol;88;LENDARIO;4400
+34;Lança dos Heróis;92;LENDARIO;4600
+35;Foice do Ceifador;96;LENDARIO;4800
+36;Machado do Caos;100;LENDARIO;5000
+37;Espada da Tempestade;104;LENDARIO;5200
+38;Cajado Supremo;108;LENDARIO;5400
+39;Adaga do Vazio;112;LENDARIO;5600
+40;Besta Divina;116;LENDARIO;5800
+41;Excalibur;125;UNICO;12500
+42;Lâmina do Destino;130;UNICO;13000
+43;Martelo de Odin;135;UNICO;13500
+44;Arco de Artemis;140;UNICO;14000
+45;Gungnir;145;UNICO;14500
+46;Foice do Fim;150;UNICO;15000
+47;Espada do Deus da Guerra;155;UNICO;15500
+48;Lança do Infinito;160;UNICO;16000
+49;Cajado da Criação;165;UNICO;16500
+50;Aniquilador de Mundos;170;UNICO;17000
