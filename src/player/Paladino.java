@@ -1,13 +1,21 @@
 package player;
 
-public class Mago extends Personagem {
-    private int mana = 20;
-    private int danoMagico = 15;
+public class Paladino extends Personagem {
+    private int mana = 10;
+    private int danoMagico = 12;
 
-    public Mago() {
+    public Paladino() {
         super();
-        setAtaque(5);
-        setDefesa(5);
+        setAtaque(10);
+        setDefesa(13);
+    }
+
+    public int getDanoMagico() {
+        return danoMagico;
+    }
+
+    public void setDanoMagico(int danoMagico) {
+        this.danoMagico = danoMagico;
     }
 
     public void atacarMagia(Personagem alvo) {
@@ -37,13 +45,5 @@ public class Mago extends Personagem {
         super.mostrarInformacoes();
         System.out.println("Mana: " + this.mana);
         System.out.println("Dano Mágico: " + this.danoMagico);
-    }
-
-    public int getDanoMagico() {
-        return danoMagico;
-    }
-
-    public void setDanoMagico(int danoMagico) {
-        this.danoMagico = danoMagico;
     }
 }
