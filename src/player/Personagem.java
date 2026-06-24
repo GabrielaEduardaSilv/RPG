@@ -1,8 +1,17 @@
 package player;
 
+import Itens.Item;
+import Itens.PocaoVida;
+import Itens.PocaoMana;
+
 public abstract class Personagem {
+    private boolean subiuNivel = false;
+    private int pontosUp;
     private String nome;
     private int vida;
+    private int vidaMaxima = 100;
+    private int mana;
+    private int manaMaxima = 50;
     private int ataque;
     private int defesa;
     private int nivel;
@@ -10,9 +19,16 @@ public abstract class Personagem {
     private int id;
     private static int contador = 0;
 
+    private Inventario inventario = new Inventario();
+
+    private boolean defendendo = false;
+
     public Personagem() {
         this.id = ++contador;
         this.vida = 100;
+        this.vidaMaxima = 100;
+        this.mana = 50;
+        this.manaMaxima = 50;
         this.nivel = 1;
         this.xp = 0;
     }
@@ -21,15 +37,44 @@ public abstract class Personagem {
         this.id = ++contador;
         this.nome = nome;
         this.vida = vida;
+        this.vidaMaxima = vida;
+        this.mana = 50;
+        this.manaMaxima = 50;
         this.ataque = ataque;
         this.defesa = defesa;
         this.nivel = nivel;
         this.xp = xp;
     }
 
-    public abstract void atacar(Personagem alvo);
+    public void usarPocao(Item pocao) {
+        if (pocao instanceof PocaoVida) {
+            PocaoVida pv = (PocaoVida) pocao;
+            this.vida += pv.getRecuperacao();
 
-    private boolean defendendo = false;
+            if (this.vida > this.vidaMaxima) {
+                this.vida = this.vidaMaxima;
+            }
+            System.out.println("\n[ITEM] Você bebeu " + pv.getNome() + " e recuperou " + pv.getRecuperacao() + " de Vida!");
+            this.inventario.removerItem(pocao);
+
+        } else if (pocao instanceof PocaoMana) {
+            if (this.manaMaxima == 0) {
+                System.out.println("\n[AVISO] " + this.getNome() + " não utiliza mana! Você não pode usar esta poção.");
+                return;
+            }
+
+            PocaoMana pm = (PocaoMana) pocao;
+            this.mana += pm.getRecuperacao();
+
+            if (this.mana > this.manaMaxima) {
+                this.mana = this.manaMaxima;
+            }
+            System.out.println("\n[ITEM] Você bebeu " + pm.getNome() + " e recuperou " + pm.getRecuperacao() + " de Mana!");
+            this.inventario.removerItem(pocao);
+        }
+    }
+
+    public abstract void atacar(Personagem alvo);
 
     public boolean isDefendendo() {
         return defendendo;
@@ -40,22 +85,42 @@ public abstract class Personagem {
     }
 
     public void verificarUpNivel(Inimigo alvo) {
+        boolean subiuNivel = false;
         this.xp += alvo.getXp();
         System.out.println("Você recebeu " + alvo.getXp() + " de XP do " + alvo.getNome() + "!");
 
         if (this.xp >= 100) {
+            subiuNivel = true;
             this.nivel++;
+            this.pontosUp = 5;
             this.xp = this.xp - 100;
             System.out.println("Você subiu de nível! Seu nível atual: " + this.nivel);
+            System.out.println("Você ganhou 5 pontos para aumentar seus status como recompensa!");
         } else {
             System.out.println("XP atual: " + this.xp);
         }
     }
-    public void mostrarInformacoes() {
-        System.out.println("Dano Físico: "+getAtaque());
-        System.out.println("Defesa: "+getDefesa());
-        System.out.println("Vida: "+getVida());
 
+    public abstract void aumentarStatus(Personagem personagem);
+
+    public void mostrarInformacoes() {
+        System.out.println("Dano Físico: " + getAtaque());
+        System.out.println("Defesa: " + getDefesa());
+        System.out.println("Vida: " + getVida() + "/" + vidaMaxima);
+        System.out.println("Mana: " + getMana() + "/" + manaMaxima);
+    }
+
+    public Inventario getInventario() {
+        return inventario;
+    }
+
+    public int getMana() {
+        return mana;
+    }
+
+    public void setMana(int mana) {
+        if (mana < 0) this.mana = 0;
+        else this.mana = mana;
     }
 
     public String getNome() {
@@ -71,11 +136,27 @@ public abstract class Personagem {
     }
 
     public void setVida(int vida) {
-        if (vida < 0) {
+        if(vida < 0) {
             this.vida = 0;
-        } else {
+        }else {
             this.vida = vida;
         }
+    }
+
+    public int getVidaMaxima() {
+        return vidaMaxima;
+    }
+
+    public void setVidaMaxima(int vidaMaxima) {
+        this.vidaMaxima = vidaMaxima;
+    }
+
+    public int getManaMaxima() {
+        return manaMaxima;
+    }
+
+    public void setManaMaxima(int manaMaxima) {
+        this.manaMaxima = manaMaxima;
     }
 
     public int getAtaque() {
@@ -112,5 +193,29 @@ public abstract class Personagem {
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setInventario(Inventario inventario) {
+        this.inventario = inventario;
+    }
+
+    public int getPontosUp() {
+        return pontosUp;
+    }
+
+    public void setPontosUp(int pontosUp) {
+        this.pontosUp = pontosUp;
+    }
+
+    public boolean isSubiuNivel() {
+        return subiuNivel;
+    }
+
+    public void setSubiuNivel(boolean subiuNivel) {
+        this.subiuNivel = subiuNivel;
     }
 }

@@ -28,7 +28,15 @@ public class Inimigo extends Personagem {
         Random rand = new Random();
         int danoAleatorio = rand.nextInt(getAtaque())+1;
         this.danoTotal = danoAleatorio;
+        if(this.danoTotal > alvo.getVida()){
+            this.danoTotal = alvo.getVida();
+        }
         alvo.setVida(alvo.getVida() - this.danoTotal);
+    }
+
+    @Override
+    public void aumentarStatus(Personagem personagem) {
+
     }
 
     public void aleatorizarAtaques(Personagem alvo) {
@@ -47,6 +55,10 @@ public class Inimigo extends Personagem {
                         danoTotal = getAtaque() - 20;
                     }
                     if (danoTotal < 0) danoTotal = 0;
+
+                    if(this.danoTotal > alvo.getVida()){
+                        this.danoTotal = alvo.getVida();
+                    }
 
                     alvo.setVida(alvo.getVida() - danoTotal);
 

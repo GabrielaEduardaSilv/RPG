@@ -5,6 +5,9 @@ public class Barbaro extends Personagem {
         super();
         setAtaque(15);
         setDefesa(11);
+        this.setMana(0);
+        this.setManaMaxima(0);
+
     }
     @Override
     public void atacar(Personagem alvo) {
@@ -24,5 +27,10 @@ public class Barbaro extends Personagem {
         }
         alvo.setVida(alvo.getVida() - danoTotal);
         System.out.println("Você causou: " + getAtaque() + " de dano, o inimigo tem: " + alvo.getVida() + " pontos de vida restantes.");
+    }
+
+    @Override
+    public void aumentarStatus(Personagem personagem) {
+
     }
 }

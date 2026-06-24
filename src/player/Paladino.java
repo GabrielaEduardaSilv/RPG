@@ -1,13 +1,16 @@
 package player;
 
+import java.util.Scanner;
+
 public class Paladino extends Personagem {
-    private int mana = 10;
     private int danoMagico = 12;
 
     public Paladino() {
         super();
         setAtaque(10);
         setDefesa(13);
+        setMana(10);
+        setManaMaxima(10);
     }
 
     public int getDanoMagico() {
@@ -21,10 +24,13 @@ public class Paladino extends Personagem {
 
     public void atacarMagia(Personagem alvo) {
         alvo.setVida(alvo.getVida() - danoMagico);
+        int custoMana = 5;
+        setMana(getMana() - custoMana);
         if (alvo.getVida() < 0) {
             alvo.setVida(0);
         }
         System.out.println("Você causou: " + danoMagico + " de dano mágico, o inimigo tem: " + alvo.getVida() + " pontos de vida restantes.");
+        System.out.println("Mana restante: " + getMana());
     }
 
     @Override
@@ -46,11 +52,67 @@ public class Paladino extends Personagem {
         alvo.setVida(alvo.getVida() - danoTotal);
         System.out.println("Você causou: " + getAtaque() + " de dano, o inimigo tem: " + alvo.getVida() + " pontos de vida restantes.");
     }
-    @Override
-    public void mostrarInformacoes() {
-        super.mostrarInformacoes();
-        System.out.println("Mana: "+this.mana);
-        System.out.println("Dano Mágico: " + this.danoMagico);
-    }
 
+    @Override
+    public void aumentarStatus(Personagem personagem) {
+        Scanner scan = new Scanner(System.in);
+        int valoresBases;
+        if(isSubiuNivel()){
+            while(getPontosUp() > 0){
+                System.out.println(getNome() + " escolha como quer usar seus pontos: ");
+                System.out.println("Cada ponto aumenta +10 ao total");
+                System.out.println("1. Vida");
+                System.out.println("2. Ataque");
+                System.out.println("3. Defesa");
+                System.out.println("4. Dano Mágico");
+                System.out.println("5. Mana");
+                int  op = scan.nextInt();
+
+                switch(op){
+                    case 1:{
+                        System.out.println("Quantos pontos você quer colocar?");
+                        int pontos = scan.nextInt();
+                        int pontosTotais = 10 * pontos;
+                        valoresBases = getVida();
+
+                        setVida(valoresBases += pontosTotais);
+                        setVidaMaxima(getVida());
+                    }
+                    case 2:{
+                        System.out.println("Quantos pontos você quer colocar?");
+                        int pontos = scan.nextInt();
+                        int pontosTotais = 10 * pontos;
+                        valoresBases = getAtaque();
+
+                        setAtaque(valoresBases += pontosTotais);
+                    }
+                    case 3: {
+                        System.out.println("Quantos pontos você quer colocar?");
+                        int pontos = scan.nextInt();
+                        int pontosTotais = 10 * pontos;
+
+                        valoresBases = getDefesa();
+
+                        setDefesa(valoresBases += pontosTotais);
+                    }
+                    case 4: {
+                        System.out.println("Quantos pontos você quer colocar?");
+                        int pontos = scan.nextInt();
+                        int pontosTotais = 10 * pontos;
+
+                        this.danoMagico += pontosTotais;
+                    }
+                    case 5: {
+                        System.out.println("Quantos pontos você quer colocar?");
+                        int pontos = scan.nextInt();
+                        int pontosTotais = 10 * pontos;
+                        int manaAtual = getMana();
+
+                        setMana(manaAtual += pontosTotais);
+                        setManaMaxima(getMana());
+                    }
+                }
+            }
+        }
+    }
 }
