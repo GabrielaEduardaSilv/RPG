@@ -1,12 +1,15 @@
 package player;
 
 import Itens.Item;
-import Itens.PocaoVida;
 import Itens.PocaoMana;
+import Itens.PocaoVida;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
+import java.util.Comparator;
 
-public class Inventario {
+public class Inventario implements java.io.Serializable{
     private List<Item> itens = new ArrayList<>();
 
     public void adicionarItem(Item item) {
@@ -37,6 +40,31 @@ public class Inventario {
             }
         }
         return pocoes;
+    }
+
+    public List<Item> getEquipamentosNoInventario() {
+        List<Item> equipamentos = new ArrayList<>();
+        for (Item item : itens) {
+            if (!(item instanceof PocaoVida) && !(item instanceof PocaoMana)) {
+                equipamentos.add(item);
+            }
+        }
+        return equipamentos;
+    }
+
+    public void ordenarItensPorPreco() {
+        if (itens == null || itens.isEmpty()) {
+            System.out.println("[AVISO] O inventário está vazio. Nada para ordenar!");
+            return;
+        }
+        Collections.sort(itens, new Comparator<Item>() {
+            @Override
+            public int compare(Item item1, Item item2) {
+                return Integer.compare(item1.getValor(), item2.getValor());
+            }
+        });
+
+        System.out.println("[SUCESSO] Inventário ordenado por preço com sucesso!");
     }
 
     public void removerItem(Item item) {

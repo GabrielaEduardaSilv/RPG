@@ -6,7 +6,7 @@ public abstract class Item {
     private RaridadeItem raridade;
     private int valor;
 
-    public Item(int id, String nome, RaridadeItem raridade, int valor) {
+    public Item(int id, String nome, RaridadeItem raridade, int valor, TipoItem tipoItem) {
         this.id = id;
         this.nome = nome;
         this.raridade = raridade;

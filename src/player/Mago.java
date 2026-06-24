@@ -45,65 +45,75 @@ public class Mago extends Personagem {
     }
 
     @Override
-    public void aumentarStatus(Personagem personagem) {
+    public void aumentarStatus() {
         Scanner scan = new Scanner(System.in);
         int valoresBases;
-        if(isSubiuNivel()){
-            while(getPontosUp() > 0){
-                System.out.println(getNome() + " escolha como quer usar seus pontos: ");
-                System.out.println("Cada ponto aumenta +10 ao total");
+
+        if (isSubiuNivel()) {
+            while (getPontosUp() > 0) {
+                System.out.println("-------------------------------------");
+                System.out.println(getNome() + ", você tem " + getPontosUp() + " pontos para distribuir!");
+                System.out.println("Cada ponto colocado aumenta +10 no status.");
+                System.out.println("-------------------------------------");
                 System.out.println("1. Vida");
                 System.out.println("2. Ataque");
                 System.out.println("3. Defesa");
                 System.out.println("4. Dano Mágico");
                 System.out.println("5. Mana");
-                int  op = scan.nextInt();
+                System.out.print("Escolha uma opção: ");
+                int op = scan.nextInt();
 
-                switch(op){
-                    case 1:{
-                        System.out.println("Quantos pontos você quer colocar?");
-                        int pontos = scan.nextInt();
-                        int pontosTotais = 10 * pontos;
-                        valoresBases = getVida();
+                System.out.print("Quantos pontos você quer colocar? ");
+                int pontos = scan.nextInt();
 
-                        setVida(valoresBases += pontosTotais);
-                        setVidaMaxima(getVida());
+                if (pontos > getPontosUp() || pontos <= 0) {
+                    System.out.println("[AVISO] Quantidade de pontos inválida! Tente novamente.");
+                    continue;
+                }
+
+                int pontosTotais = 10 * pontos;
+
+                switch (op) {
+                    case 1: {
+                        valoresBases = getVidaMaxima();
+                        setVidaMaxima(valoresBases + pontosTotais);
+                        setVida(getVidaMaxima());
+                        System.out.println("Vida Máxima aumentada para: " + getVidaMaxima());
+                        break;
                     }
-                    case 2:{
-                        System.out.println("Quantos pontos você quer colocar?");
-                        int pontos = scan.nextInt();
-                        int pontosTotais = 10 * pontos;
+                    case 2: {
                         valoresBases = getAtaque();
-
-                        setAtaque(valoresBases += pontosTotais);
+                        setAtaque(valoresBases + pontosTotais);
+                        System.out.println("Ataque aumentado para: " + getAtaque());
+                        break;
                     }
                     case 3: {
-                        System.out.println("Quantos pontos você quer colocar?");
-                        int pontos = scan.nextInt();
-                        int pontosTotais = 10 * pontos;
-
                         valoresBases = getDefesa();
-
-                        setDefesa(valoresBases += pontosTotais);
+                        setDefesa(valoresBases + pontosTotais);
+                        System.out.println("Defesa aumentada para: " + getDefesa());
+                        break;
                     }
                     case 4: {
-                        System.out.println("Quantos pontos você quer colocar?");
-                        int pontos = scan.nextInt();
-                        int pontosTotais = 10 * pontos;
-
                         this.danoMagico += pontosTotais;
+                        System.out.println("Dano Mágico aumentado para: " + this.danoMagico);
+                        break;
                     }
                     case 5: {
-                        System.out.println("Quantos pontos você quer colocar?");
-                        int pontos = scan.nextInt();
-                        int pontosTotais = 10 * pontos;
-                        int manaAtual = getMana();
-
-                        setMana(manaAtual += pontosTotais);
-                        setManaMaxima(getMana());
+                        int manaMaximaAtual = getManaMaxima();
+                        setManaMaxima(manaMaximaAtual + pontosTotais);
+                        setMana(getManaMaxima());
+                        System.out.println("Mana Máxima aumentada para: " + getManaMaxima());
+                        break;
                     }
+                    default:
+                        System.out.println("Opção de status inválida!");
                 }
+
+                setPontosUp(getPontosUp() - pontos);
             }
+
+            setSubiuNivel(false);
+            System.out.println("[SUCESSO] Todos os pontos foram distribuídos!");
         }
     }
 

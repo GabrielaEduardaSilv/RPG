@@ -37,7 +37,7 @@ public class LeitorEquipamentos {
         } catch(ArquivoInvalidoException e) {
             System.out.println(e.getMessage());
         } catch(IOException | IllegalArgumentException e) {
-            System.out.println("Erro ao ler o arquivo de poções: " + e.getMessage());
+            System.out.println("Erro ao ler o arquivo de equipamentos: " + e.getMessage());
         }
         return equipamentos;
     }

@@ -35,7 +35,7 @@ public class Inimigo extends Personagem {
     }
 
     @Override
-    public void aumentarStatus(Personagem personagem) {
+    public void aumentarStatus() {
 
     }
 
@@ -76,6 +76,21 @@ public class Inimigo extends Personagem {
                 break;
             }
         }
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Inimigo outro = (Inimigo) obj;
+        return this.getNivel() == outro.getNivel() && this.getNome().equals(outro.getNome());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (getNome() != null ? getNome().hashCode() : 0);
+        result = 31 * result + getNivel();
+        return result;
     }
 
     public boolean verificarMorte() {

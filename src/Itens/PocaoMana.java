@@ -5,7 +5,7 @@ public class PocaoMana extends Item {
     private int recuperacao;
 
     public PocaoMana(int id, String nome, int recuperacao, RaridadeItem raridade, int valor) {
-        super(id, nome, raridade, valor);
+        super(id, nome, raridade, valor, TipoItem.ARMADURA);
         this.recuperacao = recuperacao;
     }
 

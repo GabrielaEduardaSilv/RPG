@@ -1,10 +1,10 @@
 package player;
 
-import Itens.Item;
+import Itens.*;
 import Itens.PocaoVida;
 import Itens.PocaoMana;
 
-public abstract class Personagem {
+public abstract class Personagem implements java.io.Serializable{
     private boolean subiuNivel = false;
     private int pontosUp;
     private String nome;
@@ -18,6 +18,9 @@ public abstract class Personagem {
     private int xp;
     private int id;
     private static int contador = 0;
+    private Item armaEquipada = null;
+    private Item armaduraEquipada = null;
+    private int moedas;
 
     private Inventario inventario = new Inventario();
 
@@ -25,12 +28,14 @@ public abstract class Personagem {
 
     public Personagem() {
         this.id = ++contador;
-        this.vida = 100;
+        this.vida =
+                50;
         this.vidaMaxima = 100;
         this.mana = 50;
         this.manaMaxima = 50;
         this.nivel = 1;
         this.xp = 0;
+        this.moedas = 100;
     }
 
     public Personagem(String nome, int nivel, int vida, int ataque, int defesa, int xp) {
@@ -44,6 +49,7 @@ public abstract class Personagem {
         this.defesa = defesa;
         this.nivel = nivel;
         this.xp = xp;
+        this.moedas = 100;
     }
 
     public void usarPocao(Item pocao) {
@@ -54,12 +60,12 @@ public abstract class Personagem {
             if (this.vida > this.vidaMaxima) {
                 this.vida = this.vidaMaxima;
             }
-            System.out.println("\n[ITEM] Você bebeu " + pv.getNome() + " e recuperou " + pv.getRecuperacao() + " de Vida!");
+            System.out.println("[ITEM] Você bebeu " + pv.getNome() + " e recuperou " + pv.getRecuperacao() + " de Vida!");
             this.inventario.removerItem(pocao);
 
         } else if (pocao instanceof PocaoMana) {
             if (this.manaMaxima == 0) {
-                System.out.println("\n[AVISO] " + this.getNome() + " não utiliza mana! Você não pode usar esta poção.");
+                System.out.println("[AVISO] " + this.getNome() + " não utiliza mana! Você não pode usar esta poção.");
                 return;
             }
 
@@ -69,7 +75,7 @@ public abstract class Personagem {
             if (this.mana > this.manaMaxima) {
                 this.mana = this.manaMaxima;
             }
-            System.out.println("\n[ITEM] Você bebeu " + pm.getNome() + " e recuperou " + pm.getRecuperacao() + " de Mana!");
+            System.out.println("[ITEM] Você bebeu " + pm.getNome() + " e recuperou " + pm.getRecuperacao() + " de Mana!");
             this.inventario.removerItem(pocao);
         }
     }
@@ -101,13 +107,56 @@ public abstract class Personagem {
         }
     }
 
-    public abstract void aumentarStatus(Personagem personagem);
+    public void equiparItem(Item item) {
+        if (item instanceof Arma) {
+            Arma novaArma = (Arma) item;
+
+            if (this.armaEquipada != null) {
+                Arma antiga = (Arma) this.armaEquipada;
+                this.setAtaque(this.getAtaque() - antiga.getDano());
+            }
+            this.armaEquipada = novaArma;
+            this.setAtaque(this.getAtaque() + novaArma.getDano());
+            System.out.println("[EQUIPADO] Você equipou " + novaArma.getNome() + "! Ataque aumentado.");
+
+        } else if (item instanceof Equipamento) {
+            Equipamento novoEquipamento = (Equipamento) item;
+
+            if (this.armaduraEquipada != null) {
+                Equipamento antiga = (Equipamento) this.armaduraEquipada;
+                this.setDefesa(this.getDefesa() - antiga.getDefesa());
+            }
+
+            this.armaduraEquipada = novoEquipamento;
+            this.setDefesa(this.getDefesa() + novoEquipamento.getDefesa());
+            System.out.println("[EQUIPADO] Você vestiu " + novoEquipamento.getNome() + "! Defesa aumentada.");
+        }
+    }
+
+    public abstract void aumentarStatus();
 
     public void mostrarInformacoes() {
         System.out.println("Dano Físico: " + getAtaque());
         System.out.println("Defesa: " + getDefesa());
         System.out.println("Vida: " + getVida() + "/" + vidaMaxima);
         System.out.println("Mana: " + getMana() + "/" + manaMaxima);
+    }
+
+    public int getMoedas() {
+        return this.moedas;
+    }
+
+    public void setMoedas(int moedas) {
+        this.moedas = moedas;
+    }
+
+    public Item getArmaEquipada() {
+        return armaEquipada;
+
+    }
+    public Item getArmaduraEquipada() {
+        return armaduraEquipada;
+
     }
 
     public Inventario getInventario() {

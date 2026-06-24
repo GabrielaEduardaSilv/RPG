@@ -1,11 +1,11 @@
 package player;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class Caminhos {
     public void caminho() {
         Scanner scan = new Scanner(System.in);
+        Batalha combate = new Batalha();
         int op;
         boolean executandoJogo = true;
 
@@ -14,7 +14,8 @@ public class Caminhos {
             System.out.println("   A aventura do herói   ");
             System.out.println("-------------------------");
             System.out.println("1. Iniciar nova aventura");
-            System.out.println("2. Sair do jogo");
+            System.out.println("2. Carregar aventura");
+            System.out.println("3. Sair do jogo");
             System.out.println("-------------------------");
             System.out.println("Escolha uma opção: ");
             int opMenu = scan.nextInt();
@@ -89,10 +90,15 @@ public class Caminhos {
                     System.out.println("Escolha o nome do personagem: ");
                     personagem.setNome(scan.next());
 
-                    Batalha combate = new Batalha();
                     combate.batalha(personagem);
+
+                    break;
                 }
-                case 2:{
+                case 2: {
+                    combate.carregarJogo(scan);
+                    break;
+                }
+                case 3:{
                     System.out.println("Saindo...");
                     executandoJogo = false;
                     break;
